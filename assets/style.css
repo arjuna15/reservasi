@@ -1,0 +1,1433 @@
+body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      background-color: #05121b;
+      color: white;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 65px;
+    }
+
+    .containersection {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0px;
+    }
+
+
+    /* SECTION AMENITIES */
+    .aminities-section {
+      max-width: 100%;
+      background-color: #05121b;
+      margin: 0 20px;
+    }
+    @media (min-width: 1920px) {
+      .aminities-section {
+        margin: 0 250px;
+      }
+    }
+    .aminities-section .aminities-cards {
+      display: flex;
+      flex-wrap: wrap; /* Allows wrapping on smaller screens */
+      justify-content: space-around; /* Centers and spaces the cards evenly */
+      gap: 20px; /* Adds spacing between the cards */
+      margin: 20px 0; 
+    }
+    
+    .aminities-section .card {
+      flex: 1 1 calc(16.66% - 20px); /* Each card takes up 1/6 of the row, minus gap */
+      max-width: calc(16.66% - 20px);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .aminities-section .card p{
+      font-size: 14px;
+      text-align: left;
+    }
+    
+    .aminities-section .card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .aminities-cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap; /* Allow cards to wrap */
+      gap: 20px;
+    }
+
+    .aminities-cards h2 {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .unit-facilities-section {
+      text-align: left;
+      background-color: #ffffff;
+      padding: 25px 20px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: 1920px) {
+      .unit-facilities-section {
+        padding: 25px 250px;
+      }
+    }
+    .unit-facilities-section h3{
+      font-size: 48px;
+      color: #000000;
+      margin-top: 10px;
+      }
+    .unit-facilities-section p{
+      font-size: 14px;
+      color: #000000;
+      }
+    .kitchen-facilities-section {
+      text-align: left;
+      background-color: #ffffff;
+      padding: 50px 20px;
+      }
+    @media (min-width: 1920px) {
+      .kitchen-facilities-section {
+        padding: 50px 250px;
+      }
+    }  
+    .kitchen-facilities-section h3{
+      font-size: 48px;
+      color: #c97b7b;
+      margin-top: 10px;
+      }
+    .kitchen-facilities-section p{
+      font-size: 14px;
+      color: #000000;
+      }
+    .kitchen-section {
+      margin: 0 auto; /* Center the section on the page */
+      background-color: #c97b7b;
+      padding: 25px 20px;
+    }
+    @media (min-width: 1920px) {
+      .kitchen-section {
+        padding: 25px 250px;
+      }
+    }
+    .kitchen-section .kitchen-cards {
+      display: flex;
+      margin: 30px 0;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap; /* Allow cards to wrap */
+      gap: 20px;
+    }
+    .kitchen-section .card {
+      flex: 1 1 calc(16.66% - 20px); /* Each card takes up 1/6 of the row, minus gap */
+      max-width: calc(16.66% - 20px);
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .kitchen-section h2 {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .bathroom-section {
+      margin: 0 auto; /* Center the section on the page */
+      background-color: #000000;
+      padding: 25px 20px;
+    }
+    @media (min-width: 1920px) {
+      .bathroom-section {
+        padding: 25px 250px;
+      }
+    }
+    .bathroom-section .bathroom-cards {
+      display: flex;
+      margin: 30px 0;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap; /* Allow cards to wrap */
+      gap: 20px;
+    }
+    .bathroom-section .card {
+      flex: 1 1 calc(25% - 20px); /* Each card takes up 1/6 of the row, minus gap */
+      max-width: calc(25% - 20px);
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .bathroom-section h2 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .bathroom-section h3 {
+      color: #fff;
+      font-size: 32px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+
+    @media (max-width: 768px) {
+      .aminities-section {
+        margin: 0 20px; /* Kurangi margin di layar tablet */
+      }
+      
+      .aminities-section .card {
+        flex: 1 1 calc(50% - 20px); /* 2 kolom di layar tablet */
+        max-width: calc(50% - 20px);
+      }
+
+      .unit-facilities-section {
+        padding: 20px; /* Kurangi margin di layar tablet */
+      }
+      .kitchen-facilities-section {
+        padding: 20px 30px; /* Less padding for tablets */
+      }
+    
+      .kitchen-facilities-section h3 {
+        font-size: 36px; /* Smaller heading font size for tablets */
+        text-align: center; /* Center-align text on smaller screens */
+      }
+    
+      .kitchen-facilities-section p {
+        font-size: 13px; /* Adjust font size for tablets */
+        text-align: center; /* Center-align text for readability */
+      }
+      .kitchen-section {
+        padding: 20px 30px; /* Less padding on smaller screens */
+      }
+    
+      .kitchen-section .card {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on tablets */
+        max-width: calc(50% - 20px);
+      }
+      .bathroom-section {
+        padding: 20px 30px; /* Less padding on smaller screens */
+      }
+    
+      .bathroom-section .card {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on tablets */
+        max-width: calc(50% - 20px);
+      }
+    }
+    
+    /* Responsif untuk layar ponsel */
+    @media (max-width: 480px) {
+      .aminities-section {
+        margin: 0 10px; /* Kurangi margin di layar ponsel */
+      }
+      .aminities-section h2 {
+        font-size: 24px;
+      }
+    
+      .aminities-section .card {
+        flex: 1 1 100%; /* 1 kolom di layar ponsel */
+        max-width: 90%;
+      }
+    
+      .aminities-cards h2 {
+        font-size: 18px;
+      }
+    
+      .aminities-section .card p {
+        font-size: 14px;
+      }
+
+      .unit-facilities-section {
+        padding: 10px;
+      }
+      .kitchen-facilities-section {
+        padding: 15px 20px; /* Minimal padding on very small screens */
+      }
+    
+      .kitchen-facilities-section h3 {
+        font-size: 28px; /* Smaller font size for mobile */
+        text-align: left;
+      }
+    
+      .kitchen-facilities-section p {
+        font-size: 12px; /* Smaller paragraph font size for mobile */
+        text-align: left;
+      }
+      .kitchen-section {
+        padding: 15px 20px; /* Even less padding on very small screens */
+      }
+    
+      .kitchen-section .card {
+        flex: 1 1 100%; /* Full width on small mobile screens */
+        max-width: 100%;
+      }
+    
+      .kitchen-section h2 {
+        font-size: 16px; /* Smaller font for mobile */
+        text-align: center; /* Center-align text on mobile */
+      }
+      .bathroom-section {
+        padding: 15px 20px; /* Even less padding on very small screens */
+      }
+    
+      .bathroom-section .card {
+        flex: 1 1 100%; /* Full width on small mobile screens */
+        max-width: 100%;
+      }
+    
+      .bathroom-section h2 {
+        font-size: 16px; /* Smaller font for mobile */
+        text-align: center; /* Center-align text on mobile */
+      }
+    }
+
+    /* END SECTION AMENITIES */
+
+
+    /* SECTION LOCATION */
+
+    .select-location-section {
+      text-align: center;
+      color: #fff;
+      background-color: #ffffff;
+      padding: 75px 0;
+    }
+
+    .select-location-section h2 {
+        font-size: 18px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .location-descriptions {
+        display: flex;
+        gap: 500px; /* Adjust spacing between sentences */
+        justify-content: center;
+    }
+
+    .location-descriptions p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .location-descriptions a {
+        font-size: 18px;
+        color: #bd6b6b;
+        margin: 0;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .location-item {
+      text-align: center;
+      margin: 10px;
+  }
+  
+  .location-item p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 5px;
+  }
+  
+  .location-item a {
+      font-size: 18px;
+      color: #bd6b6b;
+      font-weight: bold;
+      text-decoration: underline;
+  }
+
+    .location-info-section {
+        max-width: 100%;
+        background-color: #05121b;
+        margin: 0 20px;
+    }
+
+    .location-info-section h2 {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .location-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+    .location-info.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .location-info-section img {
+        max-width: 100%;
+        max-height: 550px;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .location-info-section .details {
+        background-color: #fff;
+        padding: 75px;
+        margin-left: -50px;
+        z-index: 1;
+    }
+
+    .location-info.reverse .details {
+        margin-left: 0;
+        margin-right: -50px; /* untuk menggeser teks ke kiri di tampilan yang dibalik */
+    }
+
+    .location-info-section .details h2 {
+        text-align: left;
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .location-info-section .details p {
+        font-size: 14px;
+        color: #666;
+        margin: 20px 0;
+    }
+
+    .location-info-section .details a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .location-info-section .details h3 {
+        color: #333;
+        font-size: 10px;
+        font-weight: normal;
+        margin: 20px 0;
+    }
+
+    .location-info-section .details .button {
+        display: inline-block;
+        padding: 20px 30px;
+        background-color: #d19b73;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: #ccc;
+        margin: 50px 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .select-location-section {
+        text-align: center;
+        color: #fff;
+        background-color: #ffffff;
+        padding: 75px 0;
+    }
+    
+    .select-location-section h2 {
+        font-size: 18px;
+        color: #000000;
+    }
+    
+    .location-descriptions {
+        display: flex;
+        justify-content: space-between; /* Membuat item berjarak kiri-kanan */
+        gap: 50px; /* Jarak antar item */
+        padding: 0 20px; /* Menambahkan padding untuk tata letak yang lebih baik */
+        max-width: 800px; /* Menentukan lebar maksimum kontainer */
+        margin: 0 auto; /* Membuat kontainer berada di tengah */
+        flex-wrap: wrap; /* Memungkinkan wrapping di layar kecil */
+    }
+    
+    .location-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .location-item p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 5px;
+    }
+    
+    .location-item a {
+        font-size: 18px;
+        color: #bd6b6b;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+      
+        .location-info {
+            flex-direction: column; /* Change to column layout */
+            align-items: flex-start; /* Align to start */
+        }
+        .location-info.reverse {
+          flex-direction: column; /* Stack elements in reverse order on smaller screens */
+          align-items: flex-start; /* Align to start */
+      }
+      
+        .location-info-section .details {
+            padding: 50px; /* Adjust padding */
+            margin-left: 0; /* Reset margin */
+        }
+        .location-info.reverse .details {
+          padding: 50px; /* Adjust padding */
+          margin-left: 0; /* Reset margin */
+          margin-right: 0;
+        }
+      
+        .location-info-section .details h2 {
+            font-size: 16px;
+        }
+      
+        .location-info-section .details p {
+            font-size: 12px; /* Decrease font size */
+        }
+      
+        .location-info-section .details .button {
+            padding: 15px 20px; /* Adjust button size */
+            font-size: 14px; /* Decrease font size */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .select-location-section {
+            padding: 30px 0; /* Further reduce padding */
+        }
+      
+        .select-location-section h2 {
+            font-size: 14px; /* Further decrease font size */
+        }
+      
+        .location-descriptions {
+            gap: 10px; /* Further reduce spacing */
+        }
+      
+        .location-descriptions p {
+            font-size: 12px; /* Further decrease font size */
+        }
+      
+        .location-descriptions a {
+            font-size: 14px; /* Further decrease font size */
+        }
+      
+        .location-info-section .details {
+            padding: 30px; /* Further adjust padding */
+        }
+      
+        .location-info-section .details h2 {
+            font-size: 14px; /* Further decrease font size */
+        }
+      
+        .location-info-section .details p {
+            font-size: 10px; /* Further decrease font size */
+        }
+      
+        .location-info-section .details .button {
+            padding: 10px 15px; /* Further adjust button size */
+            font-size: 12px; /* Further decrease font size */
+        }
+    }
+  
+    /* END SECTION LOCATION */
+
+
+    /* PAGE STUDIO */
+
+
+    .studio-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 50px 260px;
+      background-color: #fff;
+    }
+    .studio-container h1{
+      color: #000;
+      text-align: center;
+    }
+    .studio-container h2{
+      color: #ffffff;
+      text-align: center;
+    }
+    .studio-container h3{
+      color: #ffffff;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    .studio-container h4{
+      color: #ffffff;
+      text-align: left;
+      font-size: 10px;
+      margin: 50px 0;
+      text-decoration: underline;
+    }
+    .book-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+    .booking-section {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .booking-section input {
+      padding: 8px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      width: 100px; /* Adjust width as needed */
+    }
+    
+    .booking-section button {
+      padding: 8px 8px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 0%;
+    }
+    
+    .studio {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      margin-top: 100px;
+      margin-bottom: 0;
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+    
+    .studio-content {
+      display: flex;
+      align-items: center;
+    }
+    
+    .studio-content img {
+      max-width: 50%;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 50px;
+    }
+    
+    .studio-details button {
+      background-color: #ff7df9;
+      font-size: 12px;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    /* Media query untuk layar yang lebih kecil dari 768px (ponsel dan tablet kecil) */
+    @media (max-width: 768px) {
+      .studio-container {
+          max-width: 100%; /* Pastikan lebar container sesuai layar */
+          padding: 20px 10px; /* Kurangi padding agar lebih sesuai di layar kecil */
+      }
+    
+      .studio-container h1, .studio-container h2, .studio-container h3 {
+          font-size: 18px; /* Kurangi ukuran font untuk judul */
+          text-align: center; /* Pastikan judul tetap di tengah */
+      }
+      .studio-container h3 {
+        font-size: 18px; /* Kurangi ukuran font untuk judul */
+        text-align: left; /* Pastikan judul tetap di tengah */
+    }
+
+      .studio-container h4 {
+          font-size: 8px;
+          margin: 30px 0;
+          text-align: left;
+      }
+      .studio-container p {
+        font-size: 12px; /* Kurangi ukuran font untuk judul */
+        text-align: left; /* Pastikan judul tetap di tengah */
+        margin-bottom: -5px;
+      }
+      .studio-details button {
+        float: left;
+      }
+
+      .studio {
+          margin: 20px; /* Kurangi margin untuk layar kecil */
+      }
+    
+      .studio-content {
+          flex-direction: column; /* Susun konten dalam kolom untuk layar kecil */
+          align-items: center;
+          text-align: center; /* Pusatkan teks di layar kecil */
+          margin-bottom: 50px;
+      }
+    
+      .studio-content img {
+          max-width: 90%; /* Pastikan gambar menyesuaikan layar */
+          margin: 0 0 20px 0; /* Mengatur margin gambar */
+      }
+    
+      .booking-section {
+          margin: 10px 0;
+      }
+    
+      .booking-section input {
+          width: 50%; /* Buat input memenuhi lebar container */
+          margin: 5px 0; /* Tambahkan margin di sekitar input */
+      }
+    
+      .booking-section button {
+          width: 50%; /* Buat tombol memenuhi lebar container */
+          padding: 12px; /* Tambahkan padding untuk kenyamanan pengguna */
+      }
+    }
+    /* END PAGE STUDIO */
+
+
+    /* START PAGE DETAIL */
+
+    .details-container {
+      max-width: 1400px; /* Set a max width for the container */
+      margin: 0 auto; /* Center it horizontally */
+      padding: 20px; /* Add some padding */
+    }
+    
+    .title-section {
+      
+      margin-left: 175px;
+    }
+    .title-section h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    
+    .title-section p {
+      font-size: 16px;
+      color: #ccc;
+    }
+    
+    .main-image img {
+      width: 100%;
+      max-width: 1050px;
+      margin: 20px 175px;
+    }
+    .main-image p {
+      font-size: 16px;
+      color: #ccc;
+      margin-left: 175px;
+    }
+    
+    .button-section {
+      margin: 50px 0;
+    }
+    
+    .button-section .book-btn {
+      background-color: #d19b73;
+      margin: 620px;
+      text-align: center;
+      color: #fff;
+      border: none;
+      padding: 20px 40px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .details-section {
+      text-align: left;
+      margin: 80px 170px;
+    }
+    
+    .details-section h3 {
+      font-size: 20px;
+      color: #ffce99;
+    }
+    
+    .details-section p {
+      font-size: 16px;
+      color: #b0b0b0;
+      margin-bottom: 20px;
+    }
+    
+    .details-section ul {
+      list-style-type:initial;
+      padding: 0;
+      margin: 0;
+      color: #b0b0b0;
+    }
+    
+    .details-section ul li {
+      margin-bottom: 10px;
+    }
+
+
+    @media (max-width: 768px) {
+      .title-section {
+        margin-left: 20px; /* Reduce left margin for smaller screens */
+      }
+    
+      .title-section h1 {
+        font-size: 24px; /* Smaller font size */
+      }
+    
+      .main-image img {
+        margin: 20px 0; /* Center the image without side margins */
+      }
+    
+      .main-image p {
+        margin-left: 0; /* Remove left margin */
+        text-align: left; /* Center the text */
+      }
+    
+      .button-section {
+        margin: 50px 0; /* Adjust margin for button section */
+        text-align: center; /* Center the button */
+      }
+    
+      .button-section .book-btn {
+        margin: 0; /* Remove extra margin */
+        width: 100%; /* Full width on smaller screens */
+        padding: 21px 40px; /* Adjust padding for better appearance */
+      }
+    
+      .details-section {
+        text-align: left;
+        margin: 0; /* Reduce margins */
+      }
+    
+      .details-section h3 {
+        font-size: 18px; /* Smaller font size */
+      }
+    
+      .details-section p {
+        font-size: 14px; /* Smaller font size */
+      }
+    
+      .details-section ul {
+        padding-left: 20px; /* Add padding for list items */
+      }
+    }
+    /* END PAGE DETAIL */
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    .logo span {
+      color: #f2994a;
+    }
+
+    /* Default desktop navigation */
+    nav {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      gap: 3px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 12px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #f2994a;
+    }
+
+    /* Overlay Navigation for mobile */
+    .nav-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(5, 18, 27, 0.95);
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .nav-overlay.active {
+      display: flex;
+    }
+
+    .nav-overlay ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .nav-overlay li {
+      margin: 20px 0;
+    }
+
+    .nav-overlay a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+    }
+
+    /* Social icons inside overlay for mobile */
+    .nav-overlay .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .close-menu {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 130px;
+    }
+
+    .hero h2 {
+      font-size: 27px;
+      margin-bottom: 30px;
+    }
+
+    .hero h2 span {
+      color: #f2994a;
+    }
+
+    .hero p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background-color: #c8815f;
+      color: white;
+      padding: 23px 35px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .herois {
+      margin-left: 20px;
+    }
+
+    .herois button {
+      background-color: #c8815f;
+      color: white;
+      font-size: 15px;
+      padding: 18px 32px;
+      border-radius: 30px;
+      margin-left: 8px;
+      border: none;
+    }
+
+    .featured-image {
+      margin-top: 50px;
+    }
+
+    .featured-image img {
+      width: 100%;
+      height: 1050px;
+      object-fit: cover; /* Menjaga proporsi gambar */
+    }
+
+    .why-section {
+      text-align: center;
+      padding: 10px 20px; /* Tambahkan padding kiri dan kanan */
+      background-color: white;
+      color: black;
+    }
+
+    .why-section h2 {
+      font-size: 52px;
+      margin-bottom: 50px;
+    }
+
+    .why-cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap; /* Allow cards to wrap */
+      gap: 20px;
+    }
+    @media (min-width: 1920px) {
+      .why-cards {
+        padding: 10px 250px;
+      }
+    }
+
+    .card {
+      width: 30%;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .partners-section {
+    text-align: center;
+    background-color: #d18970;
+    padding: 50px 0;
+    }
+
+    .cta-section {
+    background-color: #d18970; /* Warna pink */
+    padding: 100px 0; /* Memberi jarak atas dan bawah */
+    text-align: center;
+    }
+
+    .cta h2 {
+        color: white;
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .cta-button:hover {
+        background-color: #f5c6a5;
+    }
+
+    .cta-button {
+        background-color: white;
+        font-size: 18px;
+        color: #d18970;
+        padding: 24px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .cta-button:hover {
+        background-color: #f3b199;
+        color: white;
+    }
+
+    .partners-section {
+        padding: 50px 0;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .partners-section h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #05121b;
+    }
+
+    .partner-logos {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        flex-wrap: wrap; /* Membuat logo turun ke baris berikutnya di layar kecil */
+    }
+
+    .partner-logos img {
+        max-height: 200px; /* Ukuran maksimal logo */
+        width: auto;
+    }
+
+    .partners {
+        background-color: white;
+        padding: 40px 0;
+    }
+
+    .partners h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .guest-section h2 {
+        color: #d3705f;
+        font-size: 28px;
+        margin-top: 50px;
+        }
+
+    .partners-section {
+        padding: 50px 0; /* Cukup ruang di atas dan bawah */
+        min-height: auto; /* Menghapus batasan height tetap */
+        background-color: #ffffff;
+    }
+
+    .get-in-touch-section {
+      max-width: 1400px; /* Atur lebar maksimal */
+      margin: 100px auto; /* Ratakan di tengah */
+    }
+
+    .partners {
+        padding: 20px 0;
+    }
+
+    .guest-card {
+        width: 30%;
+        text-align: center;
+        }
+
+    .guest-card p {
+            font-size: 14px; /* Kurangi ukuran font deskripsi card */
+            color: #ffffff;
+        }
+
+    .guest-section {
+        text-align: center;
+        padding: 10px 20px; /* Tambahkan padding kiri dan kanan */
+        background-color: rgb(0, 0, 0);
+        color: black;
+    }
+
+    .contact-info, .newsletter, .locations {
+        flex: 1;
+        margin: 0 20px;
+    }
+    .contact-info h2, .locations h2 {
+        color: #E8E8E8;
+    }
+    .contact-info a, .locations a {
+        color: #D18B6D;
+        text-decoration: none;
+    }
+    .contact-info a:hover, .locations a:hover {
+        text-decoration: underline;
+    }
+    .newsletter input[type="email"] {
+        padding: 10px;
+        width: 70%;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    .newsletter button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #D18B6D;
+        color: #E8E8E8;
+        cursor: pointer;
+    }
+    .newsletter button:hover {
+        background-color: #B76A4A;
+    }
+    .footer {
+        background-color: #000000;
+        color: #E8E8E8;
+        text-align: center;
+        padding: 20px;
+    }
+    .footer a {
+        color: #D18B6D;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+
+    /* Media Query for Responsiveness */
+    @media (max-width: 768px) {
+      .card {
+        width: 100%; /* Make each card take full width on small screens */
+        margin-bottom: 20px; /* Space between cards */
+      }
+      .container {
+        padding: 20px; /* Kurangi padding untuk mode mobile */
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        gap: 5px;
+      }
+
+      .featured-image img {
+        height: auto; /* Sesuaikan tinggi gambar dengan proporsi aslinya */
+      }
+      .why-section {
+        padding: 20px; /* Kurangi padding kiri dan kanan di bagian why-section */
+      }
+
+      .why-cards {
+        padding: 0 20px; /* Kurangi padding kiri dan kanan di mode mobile */
+      }
+
+      .hero h2 {
+        font-size: 22px; /* Kurangi ukuran font pada judul hero */
+      }
+
+      .hero p {
+        font-size: 12px; /* Kurangi ukuran font pada teks deskripsi */
+      }
+
+      .hero button {
+        padding: 15px 25px; /* Kurangi padding tombol di hero */
+        font-size: 14px; /* Kurangi ukuran font tombol di hero */
+      }
+
+      .card {
+        width: 100%; /* Pastikan card mengambil lebar penuh di mobile */
+      }
+
+      .card h3 {
+        font-size: 20px; /* Kurangi ukuran font judul card */
+      }
+
+      .card p {
+        font-size: 14px; /* Kurangi ukuran font deskripsi card */
+      }
+
+      .social-icons a {
+        font-size: 16px; /* Kurangi ukuran ikon sosial */
+      }
+
+      .herois button {
+        padding: 12px 20px; /* Kurangi padding tombol booking di header */
+        font-size: 13px; /* Kurangi ukuran font tombol booking di header */
+      }
+      .partners-section h3 {
+        font-size: 24px; /* Kurangi ukuran font untuk layar kecil */
+        margin-bottom: 20px;
+      }
+
+      .partner-logos {
+          gap: 20px; /* Mengurangi jarak antar logo di layar kecil */
+      }
+
+      .partner-logos img {
+          max-height: 80px; /* Kurangi ukuran logo di layar kecil */
+      }
+      .guest-section h2 {
+        color: #05121b;
+      }
+
+      .cta h2 {
+          font-size: 18px; /* Memperkecil ukuran teks CTA di layar kecil */
+      }
+
+      .cta-button {
+          padding: 8px 16px;
+          font-size: 14px;
+      }
+    }
+
+    /* Desktop styles */
+    @media (min-width: 768px) {
+      .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+      }
+
+      nav {
+        display: flex; /* Show navigation on larger screens */
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 26px;
+        list-style: none;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+      }
+
+      nav ul li a:hover {
+        color: #f2994a;
+      }
+
+      /* Show social icons on desktop */
+      .social-icons {
+        display: flex; /* Make social icons visible */
+      }
+
+      .nav-overlay {
+        display: none !important; /* Ensure overlay is hidden on larger screens */
+      }
+    }
+    @media (max-width: 480px) {
+    .partners-section h3 {
+        font-size: 20px;
+    }
+
+    .partner-logos img {
+        max-height: 80px; /* Ukuran logo lebih kecil di layar yang lebih kecil */
+    }
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%; /* Set a max width for the content */
+    padding: 100px 20px;
+  }
+  @media (min-width: 1920px) {
+    .footer-container {
+      padding: 100px 250px;
+    }
+  }
+  
+  .location-section {
+    direction: rtl; /* Change writing direction to right-to-left */
+    text-align: right; /* Align text to the right */
+  }
+  
+  .location-section p, .location-section a {
+    display: block; /* Ensure each element stays on a new line */
+  }
+  
+  h3 {
+    color: #f0a896;
+  }
+  
+  a {
+    color: #f0a896;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  input[type="email"] {
+    padding: 30px;
+    margin-right: 10px;
+    border: none;
+    width: 200px;
+    height: 5px;
+  }
+  
+  button {
+    background-color: #f0a896;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d8907c;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+  
+  .footer-bottom a {
+    color: #f0a896;
+  }
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-container div {
+      margin: 20px;
+    }
+  
+    .newsletter-section form {
+        flex-direction: column; /* Change layout to column */
+        align-items: center;
+    }
+
+    .newsletter-section input[type="email"],
+    .newsletter-section button {
+      width: 60%;
+    }
+
+    .newsletter-section button {
+      margin-top: 40px; /* Add space between the button and input */
+    }
+  
+    .location-section p, .contact-section p {
+      margin: 10px auto;
+    }
+}
+
+
+
+
+
+  
